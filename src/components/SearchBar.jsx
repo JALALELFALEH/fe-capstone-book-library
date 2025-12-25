@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }) => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search for a title, author, or keyword..."
-            className="flex-grow p-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="grow p-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button 
             type="submit"

@@ -1,11 +1,28 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return (
-        <nav className="bg-blue-600 text-white p-4 shadow-lg">
-        <div className="container mx-auto">
-            <h1 className="text-2xl font-bold">📚 Open Library Explorer</h1>
-            <p className="text-sm opacity-80">Search millions of books instantly</p>
+        <header className="bg-white shadow-md">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+            
+            {/* Logo */}
+            <Link to="/">
+            <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
+                MyBookApp
+            </h1>
+            </Link>
+
+            {/* Optional navigation links */}
+            <nav className="space-x-4">
+            <Link to="/" className="text-gray-700 hover:text-blue-600">
+                Home
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-blue-600">
+                About
+            </Link>
+            </nav>
         </div>
-        </nav>
+        </header>
     );
 };
 
